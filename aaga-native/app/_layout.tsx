@@ -4,6 +4,7 @@ import { Stack, Tabs } from "expo-router";
 export default function _layout() {
   return (
     <Tabs 
+    screenOptions={{headerShown:true}}
     tabBar={props=><TabBar {...props}/>}>
       <Tabs.Screen
         name="index"
@@ -14,7 +15,15 @@ export default function _layout() {
         <Tabs.Screen
         name="news"
         options={{
-          title:'News'
+          title:'News',
+          
+        }}
+        />
+        <Tabs.Screen
+        name="myPlants"
+        options={{
+          title:'My Plants',
+          
         }}
         />
     </Tabs>

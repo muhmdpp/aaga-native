@@ -1,14 +1,15 @@
-import { View, Text,StyleSheet } from 'react-native'
+import { View, Text ,StyleSheet} from 'react-native'
 import React from 'react'
 
-export default function news() {
+const community = () => {
   return (
-    <View style={styles.container}> 
-      <Text style={styles.text}>News</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>MyPlants</Text>
     </View>
   )
 }
 
+export default community
 
 const styles= StyleSheet.create({
   container:{
