@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+      {
+        "source": {
+          "id": "gruenderszene",
+          "name": "Gruenderszene"
+        },
+        "author": null,
+        "title": "Fintech-Größe zu ihrem zweiten Exit: War das geplant? Und was kommt jetzt?",
+        "description": "Nur zwei Jahre nach Gründung hat Jessica Holzbach ihr Startup Pile verkauft. Mit uns hat sie über die Hintergründe gesprochen.",
+        "url": "https://www.businessinsider.de/gruenderszene/fintech/fintech-groesse-nach-zweitem-exit-der-schmerz/",
+        "urlToImage": "https://cdn.businessinsider.de/wp-content/uploads/2024/07/202407_GS_Artikel_Caroline-Pitzke_1800x1200.jpg?ver=1721398519",
+        "publishedAt": "2024-07-23T17:24:23+00:00",
+        "content": "Sie hats noch mal gemacht: Vor wenigen Tagen hat die Fintech-Gründerin Jessica Holzbach ihr Startup verkauft. Nach der Übernahme des Business-Banking-Startups Penta, erst durch Finleap und später dur… [+1049 chars]"
+      },
+      {
+        "source": {
+          "id": "new-scientist",
+          "name": "New Scientist"
+        },
+        "author": null,
+        "title": "Adding wild fungi to soil could make trees store more carbon",
+        "description": "A loblolly pine plantation in the state of Georgia is the test site for a start-up company trying to see if improving the fungi and other microbes in soil can help trees grow bigger and faster",
+        "url": "https://www.newscientist.com/article/2361604-adding-wild-fungi-to-soil-could-make-trees-store-more-carbon/",
+        "urlToImage": "https://images.newscientist.com/wp-content/uploads/2023/02/28175105/SEI_146112168.jpg",
+        "publishedAt": "2023-03-01T00:00:00Z",
+        "content": "By James Dinneen\r\nMycorrhizal fungi colonising a host plant’s root tissues\r\nEmmanuel Lattes//Alamy\r\nA start-up has begun planting fungi and other microbes in soil collected from intact forests at a t… [+417 chars]"
+      },
+      {
+        "source": {
+          "id": "aftenposten",
+          "name": "Aftenposten"
+        },
+        "author": "Marianne Stensland",
+        "title": "Steriliseringsmetoden har resultert i over 33.000 søksmål. I Norge er metoden stoppet, men pasienter blir ikke informert.",
+        "description": "Etter at Kjerstin Bakkevoll fikk satt inn et implantat for å bli steril, fikk hun sterke fysiske plager. I Norge brukes ikke lenger implantatet, men norske pasienter får ingen informasjon.",
+        "url": "https://www.aftenposten.no/norge/i/8meo7W/Steriliseringsmetoden-har-resultert-i-over-33000-soksmal-I-Norge-er-metoden-stoppet_-men-pasienter-blir-ikke-informert",
+        "urlToImage": "https://premium.vgc.no/ap/images/c749f038-757a-4a77-8120-defafb37e7ce?fit=crop&q=80&w=1440",
+        "publishedAt": "2020-07-09T03:34:16Z",
+        "content": "En kveld i juni ligger Kjerstin Bakkevoll (42) og ektemannen i sengen og skal se på Netflix før de sovner. Han foreslår dokumentaren «The Bleeding Edge». Den handler om medisinsk utstyr og hvordan de… [+294 chars]"
+      },
+      {
+        "source": {
+          "id": "spiegel-online",
+          "name": "Spiegel Online"
+        },
+        "author": "Spiegel Online",
+        "title": "Gedenkstätte Yad Vashem: Polens Präsident Duda reist nicht zu Holocaust-Gedenkfeier",
+        "description": "Auch Polens Präsident Duda wollte beim jährlichen Holocaust-Forum in Yad Vashem eine Rede halten - die Veranstalter planten ihn aber nicht ein. Nun hat der Politiker seinen Besuch in Israel komplett gestrichen.",
+        "url": "http://www.spiegel.de/politik/ausland/polens-praesident-andrzej-duda-nimmt-nicht-an-holocaust-gedenkfeier-in-yad-vashem-teil-a-1303956.html",
+        "urlToImage": "https://cdn1.spiegel.de/images/image-1503810-860_poster_16x9-dwtu-1503810.jpg",
+        "publishedAt": "2020-01-07T20:22:56Z",
+        "content": "Dienstag, 07.01.2020  \r\n21:22 Uhr\r\nPolens Präsident Andrzej Duda wird nicht an der Holocaust-Gedenkfeier in Yad Vashem am 23. Januar teilnehmen. Trotz mehrerer diplomatischer Interventionen hätten di… [+2319 chars]"
+      }
+    ]
+  }
