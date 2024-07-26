@@ -1,9 +1,15 @@
 import { View, Text,StyleSheet,ScrollView ,Image} from 'react-native'
 import React from 'react'
 import Thumbnail from '../assets/images/newsThumb.png'
+import { LinearGradient } from 'expo-linear-gradient';
 export default function news() {
   return (
     <View style={styles.container}> 
+    <LinearGradient
+        // Background Linear Gradient
+        colors={['transparent','#000']}
+        style={styles.background} dither={true}
+      />
     <ScrollView>
       <View style={styles.mainBox}>
         <View style={styles.contentArea}>
@@ -18,6 +24,7 @@ export default function news() {
           <Image source={Thumbnail} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
         </View>
       </View>
+      
       
 
       </ScrollView>
@@ -66,5 +73,13 @@ const styles= StyleSheet.create({
     width:280,
     backgroundColor:'',
     marginRight:5
+  },
+  background:{
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: '100%',
+    opacity:0.5
   }
 })

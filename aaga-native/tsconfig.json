@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "components/TabBar.jsx", "app/shop.jsx", "app/news.jsx"  ]
+, "components/TabBar.jsx", "app/shop.jsx", "app/news.jsx", "app/index.jsx"  ]
 }

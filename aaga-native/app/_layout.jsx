@@ -9,7 +9,8 @@ export default function _layout() {
       <Tabs.Screen
         name="index"
         options={{
-          title:'Home'
+          title:'aaga',
+          // headerShown:false
         }}
         />
         <Tabs.Screen
