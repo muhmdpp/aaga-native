@@ -3,9 +3,29 @@ import { LinearGradient } from "expo-linear-gradient";
 import newsImg from "../assets/images/news-photo.png";
 import newsImg1 from "../assets/images/img-news.png";
 import { Ionicons } from "@expo/vector-icons";
+import homeImg from '../assets/images/home-trs.png';
+import searcIcon from '../assets/images/search.png'
+import appLogo from '../assets/images/search-ficon.png'
 export default function Index() {
   return (
     <View style={styles.container}>
+      <View style={styles.topSection}>
+        <Image source={homeImg} style={{width:'100%',height:'100%'}}/>
+      </View>
+      <View style={styles.searchBox}>
+        <View style={styles.searchInput}>
+          <View style={styles.appLogo}>
+            <Image source={appLogo} style={{width:'100%',height:'70%',objectFit:'contain',marginLeft:3,marginTop:5}}/>
+          </View>
+          <View style={styles.textInput}>
+            <Text style={{fontSize:20,marginTop:10,marginLeft:4}}>Search Plant</Text>
+          </View>
+        </View>
+        <View style={styles.searchIcon}>
+        <Image source={searcIcon} style={{width:'50%',height:'80%',objectFit:'contain'}}/>
+        </View>
+      </View>
+      <View style={styles.newsTContainer}>
       <ScrollView horizontal={true} style={{ position: "absolute" }}>
         <View style={styles.newsBoxContainer}>
           <View style={styles.contentArea}>
@@ -43,8 +63,11 @@ export default function Index() {
             />
           </View>
         </View>
+
+        
       </ScrollView>
       {/* <Text style={styles.text}></Text> */}
+      </View>
     </View>
   );
 }
@@ -79,6 +102,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     overflow: "hidden",
     marginRight: 10,
+    // top:220
   },
   photoArea: {
     width: 120,
@@ -115,4 +139,65 @@ const styles = StyleSheet.create({
   textContent: {
     color:'#fff'
   },
+  topSection:{
+    height:250,
+    // backgroundColor:'#fff',
+    width:'100%',
+    position:'absolute',
+    top:0
+  },
+  newsTContainer:{
+    width:'100%',
+    height:260,
+    // backgroundColor:'#fff',
+    top:100,
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center'
+
+  },
+  searchBox:{
+    
+    width:'100%',
+    // backgroundColor:'#fff',
+    height:55,
+    display:'flex',
+    justifyContent:'center',
+    flexDirection:'row',
+    alignItems:'center',
+
+    // mariginL
+  },
+  searchInput:{
+    height:'90%',
+    width:'70%',
+    backgroundColor:'#ff0000',
+    borderRadius:25,
+    overflow:'hidden',
+    display:'flex',
+    flexDirection:'row'
+    // marginLeft:10
+  },
+  searchIcon:{
+    backgroundColor:'#d9dca7',
+    height:'90%',
+    width:'15%',
+    borderRadius:40,
+    marginLeft:10,
+    display:'flex',
+    justifyContent:'center',
+    alignItems:"center"
+    
+  },
+  appLogo:{
+    height:'100%',
+    width:60,
+    backgroundColor:'#d9dca7'
+  },
+  textInput:{
+    height:'100%',
+    width:240,
+    backgroundColor:'#d9dca7'
+  }
 });

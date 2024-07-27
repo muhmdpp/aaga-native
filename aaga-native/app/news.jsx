@@ -26,6 +26,7 @@ export default function news() {
       </View>
       
       
+      
 
       </ScrollView>
     </View>
