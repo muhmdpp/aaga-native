@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Image, ScrollView } from "react-native";
+import { Text, View, StyleSheet, Image, ScrollView,ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import newsImg from "../assets/images/news-photo.png";
 import newsImg1 from "../assets/images/img-news.png";
@@ -6,11 +6,26 @@ import { Ionicons } from "@expo/vector-icons";
 import homeImg from '../assets/images/home-trs.png';
 import searcIcon from '../assets/images/search.png'
 import appLogo from '../assets/images/search-ficon.png'
+
 export default function Index() {
   return (
     <View style={styles.container}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['transparent','#000']}
+        style={styles.background} dither={true}
+      />
       <View style={styles.topSection}>
-        <Image source={homeImg} style={{width:'100%',height:'100%'}}/>
+        <ImageBackground source={homeImg} style={styles.bgImage}>
+          <View style={styles.weatherArea}>
+            <View style={styles.textPart}>
+              <Text style={{fontSize:20,marginTop:10,marginLeft:5}}>Weather</Text>
+              <Text style={{fontSize:12,marginTop:10,marginLeft:5}}>Chennai, 01 August</Text>
+              <Text style={{fontSize:30,marginTop:10,marginLeft:5,fontWeight:'bold'}}>27o C</Text>
+            </View>
+            <View style={styles.iconPart}></View>
+          </View>
+        </ImageBackground>
       </View>
       <View style={styles.searchBox}>
         <View style={styles.searchInput}>
@@ -25,6 +40,7 @@ export default function Index() {
         <Image source={searcIcon} style={{width:'50%',height:'80%',objectFit:'contain'}}/>
         </View>
       </View>
+      <View style={styles.explore}></View>
       <View style={styles.newsTContainer}>
       <ScrollView horizontal={true} style={{ position: "absolute" }}>
         <View style={styles.newsBoxContainer}>
@@ -88,7 +104,7 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     height: "100%",
-    opacity: 0.5,
+    opacity: 0.3,
   },
   newsBoxContainer: {
     display: "flex",
@@ -140,17 +156,18 @@ const styles = StyleSheet.create({
     color:'#fff'
   },
   topSection:{
-    height:250,
+    height:300,
     // backgroundColor:'#fff',
     width:'100%',
     position:'absolute',
-    top:0
+    top:0,
+    
   },
   newsTContainer:{
     width:'100%',
     height:260,
     // backgroundColor:'#fff',
-    top:100,
+    top:80,
     display:'flex',
     flexDirection:'row',
     justifyContent:'center',
@@ -166,6 +183,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     flexDirection:'row',
     alignItems:'center',
+    top:30
 
     // mariginL
   },
@@ -199,5 +217,41 @@ const styles = StyleSheet.create({
     height:'100%',
     width:240,
     backgroundColor:'#d9dca7'
-  }
+  },
+  explore:{
+    width:'70%',
+    height:2,
+    backgroundColor:'#fff',
+    top:50,
+    
+  },
+  weatherArea:{
+    width:350,
+    height:130,
+    backgroundColor:'rgba(255, 255, 255, 0.3)', //Opacity Adjustmnts,
+    borderRadius:25,
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    overflow:'hidden'
+
+  },
+  bgImage:{
+    width:'100%',
+    height:'100%',
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  textPart:{
+    height:150,
+    width:110,
+    backgroundColor:'#fff'
+  },
+  iconPart:{
+    height:150,
+    width:150,
+    backgroundColor:'#fff'
+    }
 });
