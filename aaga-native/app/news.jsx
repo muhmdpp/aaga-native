@@ -11,10 +11,10 @@ export default function news() {
         style={styles.background} dither={true}
       />
     <ScrollView>
-      <View style={styles.mainBox}>
+    <View style={styles.mainBox}>
         <View style={styles.contentArea}>
         <Text numberOfLines={2} style={{flex:1,flexWrap:'nowrap',textAlign:'left',fontWeight:'bold',paddingLeft:25,paddingTop:5,color:'#d9dca7'}}>
-          Genomic Study Sheds Light on How Carnivorous Asian 
+          GHelloc Study Sheds Light on How Carnivorous Asian 
           Pitcher Plants Acquired Signature Insect Trap</Text>
           <Text numberOfLines={2} style={{flex:1,flexWrap:'nowrap',textAlign:'left',paddingLeft:25,fontStyle:'italic',paddingTop:5,color:'#fff'}}>
           Genomic Study Sheds Light on How Carnivorous Asian 
@@ -24,6 +24,9 @@ export default function news() {
           <Image source={Thumbnail} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
         </View>
       </View>
+      
+
+      
       
       
       

@@ -1,14 +1,20 @@
 import { Text, View, StyleSheet, Image, ScrollView,ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import newsImg from "../assets/images/news-photo.png";
+import React, { useState, useEffect } from 'react';
 import newsImg1 from "../assets/images/img-news.png";
 import { Ionicons } from "@expo/vector-icons";
 import homeImg from '../assets/images/home-trs.png';
 import searcIcon from '../assets/images/search.png'
 import appLogo from '../assets/images/search-ficon.png'
+import weatherLogo from '../assets/images/cloud.png'
+import { useFonts,Poppins_700Bold } from '@expo-google-fonts/poppins';
 
 export default function Index() {
+  
   return (
+ 
+    
     <View style={styles.container}>
       <LinearGradient
         // Background Linear Gradient
@@ -19,11 +25,13 @@ export default function Index() {
         <ImageBackground source={homeImg} style={styles.bgImage}>
           <View style={styles.weatherArea}>
             <View style={styles.textPart}>
-              <Text style={{fontSize:20,marginTop:10,marginLeft:5}}>Weather</Text>
-              <Text style={{fontSize:12,marginTop:10,marginLeft:5}}>Chennai, 01 August</Text>
-              <Text style={{fontSize:30,marginTop:10,marginLeft:5,fontWeight:'bold'}}>27o C</Text>
+              <Text style={{fontSize:20,marginTop:10,marginLeft:5,color:'#fff'}}>Weather</Text>
+              <Text style={{fontSize:12,marginTop:10,marginLeft:5,color:'#fff'}}>Chennai, 01 August</Text>
+              <Text style={{fontSize:30,marginTop:10,marginLeft:5,fontWeight:'bold',color:'#fff'}}>27o C</Text>
             </View>
-            <View style={styles.iconPart}></View>
+            <View style={styles.iconPart}>
+              <Image source={weatherLogo} style={{width:'70%',height:'70%',objectFit:'contain',marginBottom:30}}/>
+            </View>
           </View>
         </ImageBackground>
       </View>
@@ -85,7 +93,9 @@ export default function Index() {
       {/* <Text style={styles.text}></Text> */}
       </View>
     </View>
+    
   );
+  
 }
 
 const styles = StyleSheet.create({
@@ -143,6 +153,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginLeft: 5,
     color: "#d9dca7",
+    fontFamily:'Poppins_700Bold'
   },
   date: {
     // backgroundColor: "#999999",
@@ -228,12 +239,14 @@ const styles = StyleSheet.create({
   weatherArea:{
     width:350,
     height:130,
-    backgroundColor:'rgba(255, 255, 255, 0.3)', //Opacity Adjustmnts,
+    backgroundColor:'rgba(0, 0, 0, 0.2)', //Opacity Adjustmnts,
+    // backgroundColor:'#fff',
     borderRadius:25,
     display:'flex',
     flexDirection:'row',
     justifyContent:'space-between',
-    overflow:'hidden'
+    overflow:'hidden',
+    // opacity:0.5
 
   },
   bgImage:{
@@ -247,11 +260,15 @@ const styles = StyleSheet.create({
   textPart:{
     height:150,
     width:110,
-    backgroundColor:'#fff'
+    // backgroundColor:'#fff'
   },
   iconPart:{
     height:150,
     width:150,
-    backgroundColor:'#fff'
+    // backgroundColor:'#fff',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    // marginBottom:2
     }
 });
