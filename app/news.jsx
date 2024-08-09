@@ -35,12 +35,7 @@ export default function news() {
       
       
       
-      <Pressable>
-      <Link href="/newsDetails">
-        <Text>Go to News</Text>
-      
-      </Link>
-      </Pressable>
+     
       </ScrollView>
      
     </View>

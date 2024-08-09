@@ -28,7 +28,7 @@ export default function Index() {
             <View style={styles.textPart}>
               <Text style={{fontSize:20,marginTop:10,marginLeft:5,color:'#fff'}}>Weather</Text>
               <Text style={{fontSize:12,marginTop:10,marginLeft:5,color:'#fff'}}>Chennai, 01 August</Text>
-              <Text style={{fontSize:30,marginTop:10,marginLeft:5,fontWeight:'bold',color:'#fff'}}>27o C</Text>
+              <Text style={{fontSize:30,marginTop:10,marginLeft:5,fontWeight:'bold',color:'#fff'}}>27° C</Text>
             </View>
             <View style={styles.iconPart}>
               <Image source={weatherLogo} style={{width:'70%',height:'70%',objectFit:'contain',marginBottom:30}}/>
