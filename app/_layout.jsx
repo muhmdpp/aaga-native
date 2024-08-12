@@ -1,5 +1,7 @@
 import TabBar from "@/components/TabBar";
 import { Stack, Tabs } from "expo-router";
+import { Button } from "react-native";
+import newsDetails from "./newsDetails";
 
 export default function _layout() {
   return (
@@ -28,12 +30,16 @@ export default function _layout() {
         }}
         />
         <Tabs.Screen
+        // component={newsDetails}
         name="newsDetails"
         options={{
-          title:'News Detailed',
+          title:'News Diled',
           
         }}
+        
         />
     </Tabs>
   );
 }
+
+

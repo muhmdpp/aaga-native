@@ -10,7 +10,7 @@ const newsDetails = () => {
       <View style={styles.topPhoto}>
         <ImageBackground source={headPhoto} style={styles.bgImage}>
         <View style={styles.shareButton}>
-          <Ionicons name='share-social-outline' size={20} style={{marginTop:3,marginLeft:3}}/>
+          <Ionicons name='share-social-outline' size={30} style={{marginTop:3,marginLeft:3}}/>
         </View>
         </ImageBackground>
       </View>
@@ -21,7 +21,7 @@ const newsDetails = () => {
         <View style={styles.date}></View>
       </View>
       <View style={styles.contentArea}>
-        <Text style={{fontSize:16,textAlign:'justify',color:"#fff"}} >A groundbreaking genetic study has unveiled a fascinating secret about the captivating pitcher plants of Asia. These botanical marvels, renowned for their insect-trapping prowess, owe their unique shape – those elegant, deadly pitchers – to a surprising phenomenon: gene duplication! This research sheds light on the evolutionary path these plants took to develop their specialized insect-catching adaptation. Imagine a world where plants, through a twist of genetic fate, multiplied their blueprint for building these intricate traps, leading to the diverse and effective pitcher shapes we see today. This discovery not only deepens our understanding of these captivating carnivores but also offers valuable insights into the power of genetic mutations to drive remarkable adaptations in the plant kingdom. </Text>
+        <Text style={styles.textPara} >A groundbreaking genetic study has unveiled a fascinating secret about the captivating pitcher plants of Asia. These botanical marvels, renowned for their insect-trapping prowess, owe their unique shape – those elegant, deadly pitchers – to a surprising phenomenon: gene duplication! This research sheds light on the evolutionary path these plants took to develop their specialized insect-catching adaptation. Imagine a world where plants, through a twist of genetic fate, multiplied their blueprint for building these intricate traps, leading to the diverse and effective pitcher shapes we see today. This discovery not only deepens our understanding of these captivating carnivores but also offers valuable insights into the power of genetic mutations to drive remarkable adaptations in the plant kingdom. </Text>
       </View>
       <View style={styles.reference}>
         <Text style={{color:'#fff'}}>REFERENCE</Text>
@@ -62,11 +62,19 @@ const styles= StyleSheet.create({
 
     },
     contentArea:{
-        width:360,
-        height:340,
-        // backgroundColor:'#00ff00',
-        marginTop:10,
-        // paddingRight:10
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center', // Corrected to alignItems for vertical alignment
+      width: 360,
+      height: 340,
+      marginTop: 10,
+    },
+    textPara:{
+      fontSize: 16,
+    color: "#fff",
+    textAlign: 'justify',
+    lineHeight: 20, // Optional: Adjusts spacing between lines for readability
     },
     reference:{
         width:360,
@@ -84,11 +92,11 @@ const styles= StyleSheet.create({
      
     },
     shareButton:{
-      height:30,
-      width:30,
+      height:40,
+      width:40,
       backgroundColor:'#fff',
       marginBottom:10,
       marginRight:20,
-      borderRadius:30
+      borderRadius:40
     }
   })
