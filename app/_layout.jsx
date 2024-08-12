@@ -11,21 +11,21 @@ export default function _layout() {
       <Tabs.Screen
         name="index"
         options={{
-          title:'aaga',
+          title:'AAGA',
           // headerShown:false
         }}
         />
         <Tabs.Screen
         name="news"
         options={{
-          title:'News',
+          title:'NEWSLETTER',
           
         }}
         />
         <Tabs.Screen
         name="myPlants"
         options={{
-          title:'My Plants',
+          title:'MY PLANTS',
           
         }}
         />
@@ -33,11 +33,30 @@ export default function _layout() {
         // component={newsDetails}
         name="newsDetails"
         options={{
-          title:'News Diled',
+          title:'NEWSLETTER',
           
         }}
         
         />
+        <Tabs.Screen
+        // component={newsDetails}
+        name="shop"
+        options={{
+          title:'SHOP',
+          
+        }}
+        
+        />
+        <Tabs.Screen
+        
+        name="community"
+        options={{
+          title:'COMMUNITY'
+          
+        }}
+        
+        />
+        
     </Tabs>
   );
 }
