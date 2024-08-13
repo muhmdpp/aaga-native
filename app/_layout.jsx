@@ -51,9 +51,12 @@ export default function _layout() {
         
         name="community"
         options={{
-          title:'COMMUNITY'
+          title:'COMMUNITY',
+          headerStyle:{backgroundColor:'#0e201d'}
           
         }}
+        
+        
         
         />
         
