@@ -13,6 +13,7 @@ import mhd from "../assets/images/mhdpp.png";
 import danny from "../assets/images/danny.png";
 import heen from "../assets/images/heen.png";
 import suhl from "../assets/images/suhl.png";
+import garden from "../assets/images/garden.jpg"
 const community = () => {
   return (
     <View style={styles.container}>
@@ -84,6 +85,7 @@ const community = () => {
         </View>
         {/* Post Section */}
         <View style={styles.postContainer}>
+          <ScrollView >
           <View style={styles.post}>
             <View style={styles.postHeader}>
               <View style={{ display: "flex", flexDirection: "row" }}>
@@ -128,7 +130,7 @@ const community = () => {
               </View>
             </View>
             <View style={styles.PostContent}>
-                      <Text style={{color:'#fff',fontSize:26}}>Hello World, How are you, Im fine Hello World, How are you, Im fine Hello World, How are you, Im fine</Text>
+                      <Text style={styles.postText}>Hello World, How are you, Im fine Hello World, How are you, Im fine Hello World, How are you, Im fine</Text>
             </View>
             <View style={styles.postFooter}>
                       <View style={styles.iconsArea}>
@@ -137,8 +139,129 @@ const community = () => {
                         <Ionicons name="arrow-redo-outline" color={"#fff"} size={30}/>
                       </View>
             </View>
+{/* new Post */}
+            
+          </View>
+
+          
+          
+          <View style={styles.post}>
+            <View style={styles.postHeader}>
+              <View style={{ display: "flex", flexDirection: "row" }}>
+                <View style={styles.profilePic}>
+                  <Image
+                    source={suhl}
+                    style={{ width: "100%", height: "100%", borderRadius: 50 }}
+                  />
+                </View>
+                <View style={styles.idDetails}>
+                  <Text
+                    style={{
+                      fontSize: 17,
+                      color: "#fff",
+                      fontWeight: "bold",
+                      margin: 8,
+                      marginTop: 3,
+                    }}
+                  >
+                    Suhail Ahmed
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 13,
+                      color: "#fff",
+                      marginLeft: 8,
+                      marginTop: 0,
+                      bottom: 10,
+                    }}
+                  >
+                    3 hours ago
+                  </Text>
+                </View>
+              </View>
+              <View style={{ marginRight: 15 }}>
+                <Ionicons
+                  name="ellipsis-horizontal"
+                  size={20}
+                  color={"#fff"}
+                  style={{ right: 0 }}
+                />
+              </View>
+            </View>
+            <View style={styles.PostContent}>
+                      <Text style={styles.postText}>Hello World !</Text>
+            </View>
+            <View style={styles.postFooter}>
+                      <View style={styles.iconsArea}>
+                        <Ionicons name="heart" color={"#ff0000"} size={30}/>
+                        <Ionicons name="chatbubble-outline" color={"#fff"} size={30}/>
+                        <Ionicons name="arrow-redo-outline" color={"#fff"} size={30}/>
+                      </View>
+            </View>
+
+            
+          </View>
+
+          <View style={styles.post}>
+            <View style={styles.postHeader}>
+              <View style={{ display: "flex", flexDirection: "row" }}>
+                <View style={styles.profilePic}>
+                  <Image
+                    source={heen}
+                    style={{ width: "100%", height: "100%", borderRadius: 50 }}
+                  />
+                </View>
+                <View style={styles.idDetails}>
+                  <Text
+                    style={{
+                      fontSize: 17,
+                      color: "#fff",
+                      fontWeight: "bold",
+                      margin: 8,
+                      marginTop: 3,
+                    }}
+                  >
+                    Heena Fathima
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 13,
+                      color: "#fff",
+                      marginLeft: 8,
+                      marginTop: 0,
+                      bottom: 10,
+                    }}
+                  >
+                    9 hours ago
+                  </Text>
+                </View>
+              </View>
+              <View style={{ marginRight: 15 }}>
+                <Ionicons
+                  name="ellipsis-horizontal"
+                  size={20}
+                  color={"#fff"}
+                  style={{ right: 0 }}
+                />
+              </View>
+            </View>
+            <View style={styles.PostContent}>
+                      <Text style={styles.postText}>Heyyyyy, See my Garden</Text>
+                      <Image source={garden} style={{width:'100%',height:200,borderRadius:30,marginTop:10}}/>
+            </View>
+            <View style={styles.postFooter}>
+                      <View style={styles.iconsArea}>
+                        <Ionicons name="heart-outline" color={"#fff"} size={30}/>
+                        <Ionicons name="chatbubble-outline" color={"#fff"} size={30}/>
+                        <Ionicons name="arrow-redo-outline" color={"#fff"} size={30}/>
+                      </View>
+            </View>
+
+            
           </View>
           {/* Post Section */}
+
+          </ScrollView>
         </View>
       </View>
     </View>
@@ -235,11 +358,11 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     width: "100%",
-    height: "auto",
+    height: 500,
     backgroundColor: "#0e201d",
   },
   postHeader: {
-    paddingTop: 10,
+    paddingTop: 15,
     display: "flex",
     flexDirection: "row",
     height: 50,
@@ -259,14 +382,18 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   post: {
+    paddingTop:10,
     backgroundColor: "#10332d",
+    marginBottom:8
   },
   postFooter:{
     width:'100%',
     height:40,
     // backgroundColor:'#fff'
     borderTopWidth:0.7,
-    borderTopColor:'#999999'
+    borderTopColor:'#999999',
+    // borderBottomWidth:0.5,
+    // borderBottomColor:'#999999'
   },
   iconsArea:{
     display:'flex',
@@ -282,5 +409,9 @@ const styles = StyleSheet.create({
     width:'100%',
     height:'auto',
     padding:12
+  },
+  postText:{
+    color:'#fff',
+    fontSize:20
   }
 });
