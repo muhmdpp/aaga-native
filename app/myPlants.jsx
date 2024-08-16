@@ -15,7 +15,7 @@ export default function myPlants() {
       />
    
    <View style={styles.scrollableArea}>
-   <ScrollView style={{position:'relative'}}>
+   <ScrollView style={{position:'relative'}} showsVerticalScrollIndicator={false}>
 
     <View style={styles.mainBox}>
     <View style={styles.photoBox}>

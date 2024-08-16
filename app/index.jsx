@@ -51,7 +51,7 @@ export default function Index() {
       </View>
       <View style={styles.explore}></View>
       <View style={styles.newsTContainer}>
-      <ScrollView horizontal={true} style={{ position: "relative" }}>
+      <ScrollView horizontal={true} style={{ position: "relative" }} showsHorizontalScrollIndicator={false}>
         <View style={styles.newsBoxContainer}>
           <View style={styles.contentArea}>
             <Text numberOfLines={3} style={styles.titleText}>

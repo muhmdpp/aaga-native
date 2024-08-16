@@ -22,7 +22,9 @@ const community = () => {
           <View style={styles.camera}>
             <Ionicons name="camera-outline" size={40} color={"#d9dca7"} />
           </View>
-          <View style={styles.searchBox}></View>
+          <View style={styles.searchBox}>
+            
+          </View>
           <View style={styles.camera}>
             <Ionicons name="create-outline" size={40} color={"#d9dca7"} />
           </View>
@@ -40,7 +42,7 @@ const community = () => {
           </Text>
         </View>
         <View style={styles.storySection}>
-          <ScrollView horizontal={true}>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View style={styles.storyBoxFirst}>
               <ImageBackground
                 source={mhd}
@@ -85,7 +87,7 @@ const community = () => {
         </View>
         {/* Post Section */}
         <View style={styles.postContainer}>
-          <ScrollView >
+          <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.post}>
             <View style={styles.postHeader}>
               <View style={{ display: "flex", flexDirection: "row" }}>

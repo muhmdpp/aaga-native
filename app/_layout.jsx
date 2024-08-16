@@ -2,7 +2,7 @@ import TabBar from "@/components/TabBar";
 import { Stack, Tabs } from "expo-router";
 import { Button } from "react-native";
 import newsDetails from "./newsDetails";
-
+import { Ionicons } from "@expo/vector-icons";
 export default function _layout() {
   return (
     <Tabs 
@@ -19,13 +19,30 @@ export default function _layout() {
         name="news"
         options={{
           title:'NEWSLETTER',
-          
+          headerLeft: () => (
+            <Ionicons 
+              name="newspaper-outline" // Example icon name
+              size={30} 
+              color="#d9dca7" 
+               // Adjust style as needed
+              style={{marginLeft:10}}
+            />
+          ),
         }}
         />
         <Tabs.Screen
         name="myPlants"
         options={{
           title:'MY PLANTS',
+          headerLeft: () => (
+            <Ionicons 
+              name="leaf-outline" // Example icon name
+              size={30} 
+              color="#d9dca7" 
+               // Adjust style as needed
+              style={{marginLeft:10}}
+            />
+          ),
           
         }}
         />
@@ -34,7 +51,7 @@ export default function _layout() {
         name="newsDetails"
         options={{
           title:'NEWSLETTER',
-          
+        
         }}
         
         />
@@ -43,7 +60,24 @@ export default function _layout() {
         name="shop"
         options={{
           title:'SHOP',
-          
+          headerLeft: () => (
+            <Ionicons 
+              name="cart-outline" // Example icon name
+              size={30} 
+              color="#d9dca7" 
+               // Adjust style as needed
+              style={{marginLeft:10}}
+            />
+          ),
+          headerRight: () => (
+            <Ionicons 
+              name="notifications-outline" // Example icon name
+              size={30} 
+              color="#d9dca7" 
+               // Adjust style as needed
+              style={{marginRight:20}}
+            />
+          ),
         }}
         
         />
@@ -52,7 +86,19 @@ export default function _layout() {
         name="community"
         options={{
           title:'COMMUNITY',
-          headerStyle:{backgroundColor:'#0e201d'}
+          headerStyle:{backgroundColor:'#0e201d'},
+          headerRight: () => (
+            <Ionicons 
+              name="notifications-outline" // Example icon name
+              size={24} 
+              color="#d9dca7" 
+              style={{ marginRight: 15 }} // Adjust style as needed
+              onPress={() => {
+                // Define what happens when the icon is pressed
+                console.log('Cart icon pressed');
+              }}
+            />
+          ),
           
         }}
         
